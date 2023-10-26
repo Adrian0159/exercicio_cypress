@@ -5,7 +5,7 @@ describe("Teste para a remoção de contatos", () => {
     cy.visit("https://agenda-contatos-react.vercel.app/");
   });
 
-  it("Deve remover o primeiro contato", () => {
+  it("Deve remover o ultimo contato", () => {
     cy.get(".delete").last().click();
   });
 });

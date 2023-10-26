@@ -5,7 +5,7 @@ describe("Teste para a remoção de contatos", () => {
     cy.visit("https://agenda-contatos-react.vercel.app/");
   });
 
-  it("Deve remover o primeiro contato", () => {
+  it("Deve modificar o primeiro contato", () => {
     cy.get(".edit").first().click();
     cy.get('input[value="gian Souza"]').clear().type("Gian Sousa");
     cy.get('input[value="gian@ebac.com.br"]')
