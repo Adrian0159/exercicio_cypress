@@ -6,6 +6,6 @@ describe("Teste para a remoção de contatos", () => {
   });
 
   it("Deve remover o primeiro contato", () => {
-    cy.get(".delete").first().click();
+    cy.get(".delete").last().click();
   });
 });
